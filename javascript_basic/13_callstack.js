@@ -1,0 +1,9 @@
+/*
+
+
+call stack is the place where all the function gets place and if function call one by one then 
+one function push on the stack and gets executed and then pop from there.
+
+
+But in case of function call one inside  one then  in stack its get place on inside one. 
+*/
