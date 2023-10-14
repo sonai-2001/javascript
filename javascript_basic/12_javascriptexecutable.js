@@ -4,7 +4,7 @@ in case of javascript there are two main executable context
 2. function executable context
 ** additional  evil executable context which is under global
 
-foe javascript code execution there are twp phrase 
+foe javascript code execution there are two phrase 
 1. memory phase 
 2. executable phase
 

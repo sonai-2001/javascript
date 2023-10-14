@@ -1,4 +1,4 @@
-//immediately inviked function expression
+//immediately invoked function expression
 // ++++++++++++++++++++++++++++example+++++++++++++++++++++++++++++++++++++++
 (function fn(num1,num2)//it is named iife
 {
