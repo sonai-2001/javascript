@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom1</title>
+    <style>
+      .body{
+        color: skyblue;
+        background-color: black;
+      }
+    </style>
 </head>
-<body>
+<body class="body">
     <div class="one" id="div1">
 
         <h1 id="h1" class ="height">hi year</h1>
-        <p id="para">Lorem ipsum dolor sit amet.</p>
+        <p id="para">Lorem ipsum dolor sit amet. <span style="display: none;">
+          yes  
+        </span></p>
     </div>
 
 </body>
 </html>
+<!-- document.getElementById("para").style.color="red" for change the color of the paragraph by dom 
+document.getElementById('para').innerText
+'Lorem ipsum dolor sit amet.'
+
+ocument.getElementById('para').textContent
+'Lorem ipsum dolor sit amet. \n          yes  \n  
+
+ocument.getElementById('para').innerHTML
+'Lorem ipsum dolor sit amet. <span style="display: none;">\n          yes  \n        </span>
+
+ocument.getElementById('para').innerHTML
+'Lorem ipsum dolor sit amet. <span style="display: none;">\n          yes  \n        </span>
+the effect shoew on the span and it is showing.
+
+document.querySelector("#para").innerHTML=" <h1> Apurba </h1>"
+' <h1> Apurba </h1>'
+the paragraph transfer in to apurba by query selector for id
+
+-->
