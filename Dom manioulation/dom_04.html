@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba</title>
+</head>
+<body>
+    <div  class="class1">
+       <h1 id="h1">IT IS DOM</h1>
+       <p id="para1">we are doing parent child relations at dom</p>
+       <p id="para2">we are doing parent child relations at dom</p>
+
+    </div>
+</body>
+<script>
+
+    const parent =document.querySelector('.class1')
+    const child=parent.children
+   // console.log(child)// here a html collection of three is present.
+    child[0].style.color="red"// it indicates the h1 means first element.
+    parent.firstElementChild.style.color="green"// it is also the way to target.
+    parent.lastElementChild.style.color="blue"
+
+    const middle=document.querySelector('#para1')
+    const p= middle.parentElement// for target parent we need to use parenrElement.
+
+    p.style.color ="red"
+   console.log(p.innerHtML)
+
+   const fchild= p.firstElementChild
+    const schild=fchild.nextElementSibling// it is for the next sibbling
+    const firstchild=schild.previousElementSibling
+    firstchild.style.color="yellow"// itis for previous child..
+    schild.style.color="blue"
+
+
+
+   const alnodes=parent.childNodes
+   console.log(alnodes)// all the nodes are come with text nodes.
+
+
+</script>
+</html>
