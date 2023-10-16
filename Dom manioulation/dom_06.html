@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // add element
+   const fn=(language)=>
+   { 
+    const li=document.createElement('li')
+    li.className="li1"
+    
+    li.innerHTML=language
+
+    document.body.appendChild(li)
+   }
+   fn("java")
+   fn("python")
+   fn("jaavascript")
+
+// edit element
+const first=document.querySelector("li")
+first.innerHTML="javascript"// change the first list java to javascript
+
+const last=document.querySelectorAll("li")// using query selector all and comes a node list and 
+// use as an array.
+
+last[2].innerHTML="java"
+
+const middle=document.querySelector("li")
+console.log(middle)
+//middle.textContent="html"
+
+// remove element
+
+document.querySelectorAll("li")[1].remove()
+
+
+
+
+</script>
+</html>
