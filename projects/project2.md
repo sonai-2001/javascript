@@ -6,7 +6,7 @@
  ## live demo
 
  [click here](https://js-wjtwdj.stackblitz.io)
-
+ ## Main logic
  ```javascript
 const form=document.querySelector("form")
 form.addEventListener("submit",(e)=>
