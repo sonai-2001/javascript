@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image List</title>
+</head>
+<body>
+    <ul id="buttons">
+        <li id="l1"><span>button1</span></li>
+        <li id="l2"><span>button2</span></li>
+        <li id="l3"><span>button3</span></li>
+        <li id="l4"><span>button4</span></li>
+    </ul>
+</body>
+<script>
+    const button=document.querySelector("#buttons")
+    const l1=document.querySelector("#l1")
+    const l2=document.querySelector("#l2")
+    const l3=document.querySelector("#l3")
+    const l4=document.querySelector("#l4")
+    const body=document.querySelector("body")
+
+    l1.addEventListener('click',function(e){
+       e.preventDefault()
+        console.log("button1 clicked")
+        body.style.backgroundColor="red"
+
+    },false)//false--> it is for buubling propagation and it is bydefault
+    l2.addEventListener('click',function(){
+        console.log("button2 clicked")
+    },false)//false--> it is for buubling propagation and it is bydefault
+    l3.addEventListener('click',function(){
+        console.log("button3 clicked")
+    },false)//false--> it is for buubling propagation and it is bydefault
+    l4.addEventListener('click',function(e){
+        console.log("button4 clicked")
+        e.stopPropagation()
+    },true)//true--> it is for capturing  propagation and it is  not bydefault
+    button.addEventListener('click',function(e){
+        console.log("all are clicked")
+    },false)
+
+
+</script>
+</html>
