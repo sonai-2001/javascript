@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="allimage">
+   <li> <img id="img1"  width="200px"src="pexels-jill-wellington-39853.jpg" alt="error">></li>
+   <li> <img  id="img2" width="200px"src="pexels-jill-wellington-39853.jpg" alt="error">></li>
+   <li> <img id="img3" width="200px"src="pexels-jill-wellington-39853.jpg" alt="error">></li>
+</ul>
+</body>
+<script>
+    const allimage=document.getElementById("allimage")
+    const image1=document.getElementById("image1")
+    const image2=document.getElementById("image2")
+    const image3=document.getElementById("image3")
+    allimage.addEventListener("click",function(e){
+       console.log(e)
+       if(e.target.tagName=="IMG")
+       {
+        let removeitem=e.target.parentNode
+        removeitem.remove()
+       }
+    })
+    
+</script>
+</html>
