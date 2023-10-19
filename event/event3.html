@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const head=document.createElement("h1")
+    head.id="head"
+    head.innerHTML="My name is Apurba"
+    document.body.appendChild(head)
+    const button =document.createElement("button")
+    button.id="btn"
+    button.innerHTML="stop"
+    document.body.appendChild(button)
+    const stoptodo=setTimeout(function(){
+        head.innerHTML="My name is sonai also"
+    },2000)
+    button.addEventListener("click",function(){
+      clearTimeout(stoptodo)  
+    })
+
+</script>
+</html>
