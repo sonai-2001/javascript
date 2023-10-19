@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const para=document.createElement("p")
+    para.innerHTML="Hi sir"
+    document.body.appendChild(para)
+    const stoptodo=setInterval(function(){
+    console.log("hi")
+    },2000)
+    const button=document.createElement('button')
+    button.innerHTML="stop"
+    document.body.appendChild(button)
+    button.addEventListener("click",function(){
+        clearInterval(stoptodo)
+    })
+
+</script>
+</html>
