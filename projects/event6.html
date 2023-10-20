@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const head=document.createElement("h1")
+    head.innerHTML="change the color by start"
+    document.body.appendChild(head)
+    const button1=document.createElement("button")
+    button1.innerHTML="start"
+    document.body.appendChild(button1)
+    const button2=document.createElement("button")
+    button2.innerHTML="stop"
+    document.body.appendChild(button2)
+
+   const setcolor= function()
+    {
+        let col=getRandomColor()
+      document.body.style.backgroundColor=col
+    }
+    const getRandomColor=function()
+    {
+      const list="0123456789ABCDEF"
+      let color="#"
+      for(let i=0;i<6;i++)
+      {
+        color+=list[Math.floor(Math.random()*16)]
+      }
+      return color;
+    }
+    button1.addEventListener("click",function(){
+        stoptodo=setInterval(setcolor,2000)
+    })
+    button2.addEventListener("click",function(){
+        clearInterval(stoptodo)
+    })
+     
+
+</script>
+</html>
