@@ -19,4 +19,6 @@ promise2.then(function(user){
       console.log(username)
 }).catch(function(error){
      console.log(error)
+}).finally(function(){
+    console.log("thank you for the use")// it is happened every times
 })
