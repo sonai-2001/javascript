@@ -8,8 +8,10 @@ const promise1=new Promise(function(resolve,reject){
        setTimeout(function()
        {
         console.log("hi")
-        resolve()
+        resolve()// if we use resolve later then the prommise works before the async task. 
+       
        },1000)
+       
        
 })
 promise1.then(function(){
