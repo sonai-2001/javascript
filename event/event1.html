@@ -34,11 +34,12 @@
     l4.addEventListener('click',function(e){
         console.log("button4 clicked")
         e.stopPropagation()
-    },true)//true--> it is for capturing  propagation and it is  not bydefault
+    },false)//true--> it is for capturing  propagation and it is  not bydefault
     button.addEventListener('click',function(e){
         console.log("all are clicked")
-    },false)
+    },true)
 
+    
 
 </script>
 </html>
